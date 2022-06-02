@@ -14,7 +14,6 @@ const useDocuments = (collection, id) => {
     error.value = null;
     try {
       const res = await docRef.delete();
-      isPanding = false;
       return res;
     } catch (err) {
       console.log(err);
